@@ -33,6 +33,6 @@ openssl x509 -req -in selfsigned.csr -CA myCA.pem -CAkey myCA.key -CAcreateseria
 cat selfsigned.key selfsigned.crt > selfsigned.pem
 </pre>
 
-You will now need to copy the selfsigned cert back into the repo, and cat out the myCA.pem. You need to tell Chrome to 
+You will now need to copy the selfsigned cert back into your copy of the repo, and cat out the myCA.pem. You need to tell Chrome to 
 trust your certs by importing myCA.pem into the Keychain app, and tell Firefox by importing myCA.pem directly into Firefox trusted CAs.
 At least on a Mac.
